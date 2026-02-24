@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>OWNED BY AZAEL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    color: #e6e6e6;
+    font-family: "Times New Roman", serif;
+  }
+  .wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+  }
+
+  /* ===== GLITCH TITLE ===== */
+  .glitch {
+    position: relative;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #b30000;
+    margin-bottom: 20px;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .glitch::before {
+    color: #ff0033;
+    animation: glitch1 2.5s infinite linear alternate-reverse;
+  }
+  .glitch::after {
+    color: #00aaff;
+    animation: glitch2 1.8s infinite linear alternate-reverse;
+  }
+
+  @keyframes glitch1 {
+    0% { clip-path: inset(0 0 80% 0); transform: translate(-2px, -1px); }
+    20% { clip-path: inset(10% 0 60% 0); transform: translate(2px, 1px); }
+    40% { clip-path: inset(40% 0 30% 0); transform: translate(-1px, 0); }
+    60% { clip-path: inset(70% 0 10% 0); transform: translate(1px, -1px); }
+    100% { clip-path: inset(0 0 80% 0); transform: translate(0); }
+  }
+
+  @keyframes glitch2 {
+    0% { clip-path: inset(60% 0 10% 0); transform: translate(2px, 0); }
+    20% { clip-path: inset(30% 0 40% 0); transform: translate(-2px, -1px); }
+    40% { clip-path: inset(10% 0 70% 0); transform: translate(1px, 1px); }
+    60% { clip-path: inset(50% 0 20% 0); transform: translate(-1px, 0); }
+    100% { clip-path: inset(60% 0 10% 0); transform: translate(0); }
+  }
+  /* ======================= */
+
+  .flag {
+    width: 300px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 25px rgba(255,0,0,.35);
+  }
+
+  .powered {
+    margin-top: 16px;
+    font-size: 14px;
+    opacity: .85;
+  }
+
+  .quote {
+    margin: 18px auto;
+    max-width: 700px;
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: .9;
+  }
+
+  .social {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+
+  .social a {
+    color: #2b6cff;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  .social a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsividade melhorada */
+  @media (max-width: 768px) {
+    .glitch {
+      font-size: 36px;
+    }
+    .flag {
+      width: 250px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="content">
+
+    <!-- TÍTULO COM GLITCH -->
+    <div class="glitch" data-text="OWNED BY AZAEL">OWNED BY AZAEL</div>
+
+    <img
+      class="flag"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_704ak-0cBvB0sh1zzmsM15qr5B4NpCMOng&s"
+      alt="Deface Image"
+      loading="lazy"
+    >
+
+    <div class="powered">
+      Powered by: azaelx64
+    </div>
+
+    <div class="quote">
+      "Minha dor, renova-me; minha dor, ameniza; ameniza, liberta, liberta-me..."
+      <br>
+      Não adianta ir contra o sistema – o sistema só muda quando as pessoas mudam.
+    </div>
+
+    <div class="social">
+      Instagram:
+      <a href="https://www.instagram.com/_azaelx64" target="_blank" rel="noopener noreferrer">@azaelx64</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
